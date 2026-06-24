@@ -7,6 +7,8 @@ require("config.options")
 --- plugins ---
 require("plugins.tmux")
 require("plugins.oil")
+require("plugins.oil-git-status")
+require("plugins.smear-cursor")
 require("plugins.theme")
 require("plugins.bufferline")
 require("plugins.cmp")
