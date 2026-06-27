@@ -7,7 +7,7 @@ vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 require("oil").setup({
   win_options = {
     wrap = false,
-    signcolumn = "yes",
+    signcolumn = "yes:2",
     cursorcolumn = false,
     foldcolumn = "0",
     spell = false,

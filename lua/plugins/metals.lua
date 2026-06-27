@@ -15,9 +15,6 @@ vim.pack.add(
           end
 
           metals_config = metals_config or require("metals").bare_config()
-          metals_config.on_attach = function(client, bufnr)
-            -- your on_attach function
-          end
 
           require("metals").initialize_or_attach(metals_config)
         end,
