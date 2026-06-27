@@ -3,5 +3,4 @@ vim.pack.add({
 })
 
 require('smear_cursor').setup({
-  -- Your options
 })
