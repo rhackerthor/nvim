@@ -6,13 +6,14 @@
 
 | 依赖 | 说明 |
 |------|------|
-| **Neovim >= 0.11** | 内置 `vim.pack.add()` 支持 |
+| **Neovim >= 0.12** | 内置 `vim.pack.add()` 支持 |
 | **Git** | 插件拉取与更新 |
 | **Nerd Font** | 图标显示（推荐 [JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts)） |
 | **Ripgrep** (`rg`) | Telescope 实时文本搜索 |
 | **GCC / Clang** | LSP 与 Treesitter parser 编译 |
 | **Node.js >= 18** | 部分 LSP server 需要 |
 | **Python >= 3.8** | pyright LSP 需要 |
+| **Ghostty** | 推荐的终端模拟器 |
 
 ## 安装
 
