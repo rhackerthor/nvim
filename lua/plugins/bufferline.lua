@@ -6,6 +6,7 @@ vim.pack.add {
 require("bufferline").setup({
   options = {
     mode = "buffers",
+    style_preset = { require("bufferline").style_preset.minimal },
     numbers = "none",
     close_command = "bdelete! %d",
     right_mouse_command = "bdelete! %d",
