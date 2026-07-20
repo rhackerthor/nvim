@@ -13,11 +13,17 @@ require("lualine").setup({
     globalstatus = false,
   },
   sections = {
-    lualine_a = { "mode" },
+    lualine_a = {
+      {
+        "mode",
+        separator = { left = "\u{e0b6}" },
+        right_padding = 2,
+      },
+    },
     lualine_b = {
       {
         "branch",
-        icon = "",
+        icon = "\u{f058}",
         color = { fg = "#ff9e64" },
       },
     },
@@ -29,8 +35,8 @@ require("lualine").setup({
         path = 1,
         shorting_target = 40,
         symbols = {
-          modified = "●",
-          readonly = "",
+          modified = "\u{25cf}",
+          readonly = "\u{f023}",
           unnamed = "[No Name]",
           newfile = "[New]",
         },
@@ -39,7 +45,7 @@ require("lualine").setup({
         "diagnostics",
         sources = { "nvim_diagnostic" },
         sections = { "error", "warn", "info", "hint" },
-        symbols = { error = "✘ ", warn = "▲ ", info = "● ", hint = "⚑ " },
+        symbols = { error = "\u{2718} ", warn = "\u{25b2} ", info = "\u{25cf} ", hint = "\u{2691} " },
         colored = true,
         update_in_insert = false,
         always_visible = false,
@@ -59,7 +65,13 @@ require("lualine").setup({
       "filetype",
     },
     lualine_y = { "progress" },
-    lualine_z = { "location" },
+    lualine_z = {
+      {
+        "location",
+        separator = { right = "\u{e0b4}" },
+        left_padding = 2,
+      },
+    },
   },
   inactive_sections = {
     lualine_a = {},
