@@ -22,7 +22,7 @@ end
 vim.diagnostic.config({
   virtual_text = { prefix = "" },
   signs = { active = signs },
-  update_in_insert = false,
+  update_in_insert = true,
   underline = true,
   severity_sort = true,
   float = { border = "rounded", source = true },
@@ -52,7 +52,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
     map("n", "g]", vim.diagnostic.goto_next, "Next diagnostic")
     map("n", "<leader>dq", vim.diagnostic.setloclist, "Diagnostic loclist")
 
-    if client.supports_method("textDocument/inlayHint") then
+    if client:supports_method("textDocument/inlayHint") then
       map("n", "<leader>th", function()
         vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
       end, "Toggle inlay hints")
